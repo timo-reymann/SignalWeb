@@ -3,13 +3,23 @@
   "extends": [
     "github>timo-reymann/renovate-config"
   ],
-   "regexManagers": [
+  "regexManagers": [
     {
-      "fileMatch": ["Dockerfile$"],
+      "fileMatch": [
+        "Dockerfile$"
+      ],
       "matchStrings": [
         "datasource=(?<datasource>.*?) depName=(?<depName>.*?)( versioning=(?<versioning>.*?))?\\sARG .*?_version=\"(?<currentValue>.*)\"\\s"
       ],
       "versioningTemplate": "{{#if versioning}}{{{versioning}}}{{else}}semver{{/if}}"
+    }
+  ],
+  "packageRules": [
+    {
+      "matchDepNames": [
+        "signalapp/Signal-Desktop"
+      ],
+      "minimumReleaseAge": "14 days"
     }
   ]
 }
