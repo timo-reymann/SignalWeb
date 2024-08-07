@@ -11,14 +11,24 @@ SignalWeb
   This complements Signal with a Browser edition, just like Telegram offers webk.telegram.org and WhatsApp offers web.whatsapp.com.
 </p>
 
-
+## Self-Hosted
 
 Hosted on your own hardware using your authentication of choice.
+
+The container comes with no authentication by default, so you can put your own authentication proxy in front.
+
+You also don't need to rely on someone else to store your data safely, as you can host it on any x64 docker host.
 
 ## Features
 
 - Web UI for Signal
 - Persistence in `/config`
+
+## Limitations
+
+- No memo support (can't record & play audio)
+- No attachment upload
+- Clipboard only accessible via VNC Overlay
 
 ## Requirements
 
