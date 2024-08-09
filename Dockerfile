@@ -16,10 +16,23 @@ cat <<EOF > /startapp.sh
 #!/bin/sh
 exec /usr/bin/signal-desktop --no-sandbox
 EOF
+
+set-cont-env APP_NAME "Signal Messenger"
+install_app_icon.sh "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Signal-Logo.svg/1200px-Signal-Logo.svg.png"
+chmod +x /startapp.sh
+rm -rf /var/lib/{apt,dpkg,cache,log}/
 EOT
-RUN set-cont-env APP_NAME "Signal Messenger" \
-    && install_app_icon.sh "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Signal-Logo.svg/1200px-Signal-Logo.svg.png" \
-    && chmod +x /startapp.sh
+
+LABEL org.opencontainers.image.title="SignalWeb"
+LABEL org.opencontainers.image.description="Provides a Web UI for Signal"
+LABEL org.opencontainers.image.ref.name="main"
+LABEL org.opencontainers.image.licenses='MIT'
+LABEL org.opencontainers.image.vendor="Timo Reymann <mail@timo-reymann.de>"
+LABEL org.opencontainers.image.authors="Timo Reymann <mail@timo-reymann.de>"
+LABEL org.opencontainers.image.url="https://github.com/timo-reymann/SignalWeb"
+LABEL org.opencontainers.image.documentation="https://github.com/timo-reymann/SignalWeb"
+LABEL org.opencontainers.image.source="https://github.com/timo-reymann/SignalWeb.git"
+
 
 ENV DARK_MODE=1
 ENV KEEP_APP_RUNNING=1
