@@ -1,3 +1,9 @@
+## [1.1.0](https://github.com/timo-reymann/SignalWeb/compare/1.0.1...1.1.0) (2024-08-09)
+
+### Features
+
+* Add oci labels ([65804de](https://github.com/timo-reymann/SignalWeb/commit/65804def02577943e6fc4b7f56a46adde2f4772f))
+
 ## [1.0.1](https://github.com/timo-reymann/SignalWeb/compare/1.0.0...1.0.1) (2024-08-06)
 
 ### Bug Fixes
