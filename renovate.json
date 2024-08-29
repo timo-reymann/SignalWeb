@@ -19,7 +19,8 @@
       "matchDepNames": [
         "signalapp/Signal-Desktop"
       ],
-      "minimumReleaseAge": "14 days"
+      "minimumReleaseAge": "14 days",
+      "semanticCommitType": "feat"
     }
   ]
 }
