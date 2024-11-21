@@ -1,3 +1,9 @@
+## [1.7.0](https://github.com/timo-reymann/SignalWeb/compare/1.6.0...1.7.0) (2024-11-21)
+
+### Features
+
+* **deps:** update dependency signalapp/signal-desktop to v7.32.0 ([af59dc9](https://github.com/timo-reymann/SignalWeb/commit/af59dc9eb2ce7b1feda9927eb2816c7a52a6fc06))
+
 ## [1.6.0](https://github.com/timo-reymann/SignalWeb/compare/1.5.0...1.6.0) (2024-11-07)
 
 ### Features
