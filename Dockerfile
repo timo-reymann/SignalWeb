@@ -1,6 +1,6 @@
 FROM jlesage/baseimage-gui:ubuntu-22.04-v4
 # renovate: datasource=github-releases depName=signalapp/Signal-Desktop
-ARG signal_version="v7.34.0"
+ARG signal_version="v7.35.0"
 RUN add-pkg gnupg2 wget ca-certificates  \
     && wget -O- https://updates.signal.org/desktop/apt/keys.asc | gpg --dearmor > signal-desktop-keyring.gpg \
     && cat signal-desktop-keyring.gpg | tee /usr/share/keyrings/signal-desktop-keyring.gpg > /dev/null \
