@@ -1,3 +1,9 @@
+## [1.30.0](https://github.com/timo-reymann/SignalWeb/compare/1.29.0...1.30.0) (2025-08-15)
+
+### Features
+
+* Enable web audio by default ([186d4f7](https://github.com/timo-reymann/SignalWeb/commit/186d4f703e305ad579ffac995ee632382ca912bd))
+
 ## [1.29.0](https://github.com/timo-reymann/SignalWeb/compare/1.28.0...1.29.0) (2025-08-06)
 
 ### Features
