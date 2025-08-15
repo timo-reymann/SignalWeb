@@ -33,9 +33,9 @@ LABEL org.opencontainers.image.url="https://github.com/timo-reymann/SignalWeb"
 LABEL org.opencontainers.image.documentation="https://github.com/timo-reymann/SignalWeb"
 LABEL org.opencontainers.image.source="https://github.com/timo-reymann/SignalWeb.git"
 
-
 ENV DARK_MODE=1
 ENV KEEP_APP_RUNNING=1
 ENV DOCKER_IMAGE_PLATFORM=amd64
 ENV DOCKER_IMAGE_VERSION=${signal_version}
 ENV VNC_LISTENING_PORT=-1
+ENV WEB_AUDIO=1
