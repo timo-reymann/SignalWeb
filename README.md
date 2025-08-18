@@ -27,7 +27,7 @@ You also don't need to rely on someone else to store your data safely, as you ca
 
 ## Limitations
 
-- No memo support (can't record & play audio)
+- No nicrophone support (can't record audio)
 - No attachment upload
 - Clipboard only accessible via VNC Overlay
 
