@@ -1,4 +1,4 @@
-FROM jlesage/baseimage-gui:ubuntu-22.04-v4
+FROM jlesage/baseimage-gui:ubuntu-22.04-v4.10
 # renovate: datasource=github-releases depName=signalapp/Signal-Desktop
 ARG signal_version="v7.80.0"
 RUN add-pkg gnupg2 wget ca-certificates  \
