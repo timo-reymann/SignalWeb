@@ -1,3 +1,9 @@
+## [1.48.0](https://github.com/timo-reymann/SignalWeb/compare/1.47.0...1.48.0) (2025-12-08)
+
+### Features
+
+* Upgrade to 4.10 of gui base ([c624584](https://github.com/timo-reymann/SignalWeb/commit/c62458409e3d7d4dd954b239a875ac23ab151453))
+
 ## [1.47.0](https://github.com/timo-reymann/SignalWeb/compare/1.46.0...1.47.0) (2025-12-04)
 
 ### Features
