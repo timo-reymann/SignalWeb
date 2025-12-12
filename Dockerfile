@@ -23,6 +23,10 @@ chmod +x /startapp.sh
 rm -rf /var/lib/{apt,dpkg,cache,log}/
 EOT
 
+COPY --chown=1000:1000 /rootfs-override /
+RUN mkdir -p /run/dbus \
+    && chown 1000:1000 /run/dbus
+
 LABEL org.opencontainers.image.title="SignalWeb"
 LABEL org.opencontainers.image.description="Provides a Web UI for Signal"
 LABEL org.opencontainers.image.ref.name="main"
@@ -39,3 +43,5 @@ ENV DOCKER_IMAGE_PLATFORM=amd64
 ENV DOCKER_IMAGE_VERSION=${signal_version}
 ENV VNC_LISTENING_PORT=-1
 ENV WEB_AUDIO=1
+ENV WEB_NOTIFICATION=1
+ENV SECURE_CONNECTION=1

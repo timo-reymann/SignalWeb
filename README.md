@@ -48,7 +48,7 @@ services:
       LANG: de_de.UTF-8 # your lang
       TZ: Europe/Berlin # your timezone
     ports:
-      - 5800:5800  # web port (unprotected!)
+      - 5800:5800  # web port (unprotected & via self signed https!)
     volumes:
       - signal_config:/config
 
