@@ -1,3 +1,13 @@
+## [2.0.0](https://github.com/timo-reymann/SignalWeb/compare/1.49.0...2.0.0) (2025-12-12)
+
+### ⚠ BREAKING CHANGES
+
+* Enable desktop notifications and clipboard sync
+
+### Features
+
+* Enable desktop notifications and clipboard sync ([3a4e4f9](https://github.com/timo-reymann/SignalWeb/commit/3a4e4f9fa3b9dd8cec0118396510b259ca430a07))
+
 ## [1.49.0](https://github.com/timo-reymann/SignalWeb/compare/1.48.0...1.49.0) (2025-12-09)
 
 ### Features
