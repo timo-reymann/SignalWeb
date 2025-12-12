@@ -1,3 +1,9 @@
+## [2.0.1](https://github.com/timo-reymann/SignalWeb/compare/2.0.0...2.0.1) (2025-12-12)
+
+### Bug Fixes
+
+* Add libGL ([28a8494](https://github.com/timo-reymann/SignalWeb/commit/28a84948b023e108bbce9879eb0c30f8700867da))
+
 ## [2.0.0](https://github.com/timo-reymann/SignalWeb/compare/1.49.0...2.0.0) (2025-12-12)
 
 ### ⚠ BREAKING CHANGES
