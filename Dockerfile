@@ -1,7 +1,7 @@
 FROM jlesage/baseimage-gui:ubuntu-22.04-v4.10
 # renovate: datasource=github-releases depName=signalapp/Signal-Desktop
 ARG signal_version="v7.80.1"
-RUN add-pkg gnupg2 wget ca-certificates  \
+RUN add-pkg gnupg2 wget ca-certificates libglib2.0-0  \
     && wget -O- https://updates.signal.org/desktop/apt/keys.asc | gpg --dearmor > signal-desktop-keyring.gpg \
     && cat signal-desktop-keyring.gpg | tee /usr/share/keyrings/signal-desktop-keyring.gpg > /dev/null \
     && echo 'deb [arch=amd64 signed-by=/usr/share/keyrings/signal-desktop-keyring.gpg] https://updates.signal.org/desktop/apt xenial main' | tee /etc/apt/sources.list.d/signal-xenial.list \
