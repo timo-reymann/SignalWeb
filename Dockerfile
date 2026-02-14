@@ -27,7 +27,8 @@ COPY --chown=1000:1000 /rootfs-override /
 RUN mkdir -p /run/dbus \
     && chown 1000:1000 /run/dbus
 
-LABEL org.opencontainers.image.title="SignalWeb"
+LABEL 
+LABEL org.opencontainers.image.licenses="mit"org.opencontainers.image.title="SignalWeb"
 LABEL org.opencontainers.image.description="Provides a Web UI for Signal"
 LABEL org.opencontainers.image.ref.name="main"
 LABEL org.opencontainers.image.licenses='MIT'
