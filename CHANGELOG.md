@@ -1,3 +1,9 @@
+## [2.10.0](https://github.com/timo-reymann/SignalWeb/compare/2.9.0...2.10.0) (2026-02-28)
+
+### Features
+
+* Add license info to image ([83caa97](https://github.com/timo-reymann/SignalWeb/commit/83caa97e75c94f0a171d348e2ea701285732635a))
+
 ## [2.9.0](https://github.com/timo-reymann/SignalWeb/compare/2.8.0...2.9.0) (2026-02-26)
 
 ### Features
