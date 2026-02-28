@@ -1,4 +1,9 @@
+FROM scratch AS licenses
+COPY LICENSE LICENSE
+COPY NOTICE NOTICE
+
 FROM jlesage/baseimage-gui:ubuntu-22.04-v4.10
+COPY --from=licenses / /
 # renovate: datasource=github-releases depName=signalapp/Signal-Desktop
 ARG signal_version="v7.89.0"
 RUN add-pkg gnupg2 wget ca-certificates libglib2.0-0  \
