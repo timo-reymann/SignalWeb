@@ -1,3 +1,9 @@
+## [2.11.0](https://github.com/timo-reymann/SignalWeb/compare/2.10.0...2.11.0) (2026-03-01)
+
+### Features
+
+* Add SBOM ([60c1ff8](https://github.com/timo-reymann/SignalWeb/commit/60c1ff86457b7e9940ff039c1f14973e51d9090b))
+
 ## [2.10.0](https://github.com/timo-reymann/SignalWeb/compare/2.9.0...2.10.0) (2026-02-28)
 
 ### Features
