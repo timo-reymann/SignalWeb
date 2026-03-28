@@ -1,3 +1,9 @@
+## [2.15.1](https://github.com/timo-reymann/SignalWeb/compare/2.15.0...2.15.1) (2026-03-28)
+
+### Bug Fixes
+
+* Optimize container layers ([8481e47](https://github.com/timo-reymann/SignalWeb/commit/8481e475d898d88d1ee32d6ea1b9689e73891130))
+
 ## [2.15.0](https://github.com/timo-reymann/SignalWeb/compare/2.14.0...2.15.0) (2026-03-26)
 
 ### Features
