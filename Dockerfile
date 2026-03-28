@@ -3,7 +3,19 @@ COPY LICENSE LICENSE
 COPY NOTICE NOTICE
 
 FROM jlesage/baseimage-gui:ubuntu-22.04-v4.10
+
+LABEL org.opencontainers.image.title="SignalWeb" \
+      org.opencontainers.image.description="Provides a Web UI for Signal" \
+      org.opencontainers.image.ref.name="main" \
+      org.opencontainers.image.licenses='MIT' \
+      org.opencontainers.image.vendor="Timo Reymann <mail@timo-reymann.de>" \
+      org.opencontainers.image.authors="Timo Reymann <mail@timo-reymann.de>" \
+      org.opencontainers.image.url="https://github.com/timo-reymann/SignalWeb" \
+      org.opencontainers.image.documentation="https://github.com/timo-reymann/SignalWeb" \
+      org.opencontainers.image.source="https://github.com/timo-reymann/SignalWeb.git"
+
 COPY --from=licenses / /
+
 # renovate: datasource=github-releases depName=signalapp/Signal-Desktop
 ARG signal_version="v8.2.0"
 RUN add-pkg gnupg2 wget ca-certificates libglib2.0-0  \
@@ -32,21 +44,11 @@ COPY --chown=1000:1000 /rootfs-override /
 RUN mkdir -p /run/dbus \
     && chown 1000:1000 /run/dbus
 
-LABEL org.opencontainers.image.title="SignalWeb"
-LABEL org.opencontainers.image.description="Provides a Web UI for Signal"
-LABEL org.opencontainers.image.ref.name="main"
-LABEL org.opencontainers.image.licenses='MIT'
-LABEL org.opencontainers.image.vendor="Timo Reymann <mail@timo-reymann.de>"
-LABEL org.opencontainers.image.authors="Timo Reymann <mail@timo-reymann.de>"
-LABEL org.opencontainers.image.url="https://github.com/timo-reymann/SignalWeb"
-LABEL org.opencontainers.image.documentation="https://github.com/timo-reymann/SignalWeb"
-LABEL org.opencontainers.image.source="https://github.com/timo-reymann/SignalWeb.git"
-
-ENV DARK_MODE=1
-ENV KEEP_APP_RUNNING=1
-ENV DOCKER_IMAGE_PLATFORM=amd64
-ENV DOCKER_IMAGE_VERSION=${signal_version}
-ENV VNC_LISTENING_PORT=-1
-ENV WEB_AUDIO=1
-ENV WEB_NOTIFICATION=1
-ENV SECURE_CONNECTION=1
+ENV DARK_MODE=1 \
+    KEEP_APP_RUNNING=1 \
+    DOCKER_IMAGE_PLATFORM=amd64 \
+    DOCKER_IMAGE_VERSION=${signal_version} \
+    VNC_LISTENING_PORT=-1 \
+    WEB_AUDIO=1 \
+    WEB_NOTIFICATION=1 \
+    SECURE_CONNECTION=1
