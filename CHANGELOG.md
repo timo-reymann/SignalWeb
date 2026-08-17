@@ -1,3 +1,9 @@
+## [2.37.0](https://github.com/timo-reymann/SignalWeb/compare/2.36.0...2.37.0) (2026-08-17)
+
+### Features
+
+* use custom favicon via local icon file ([#89](https://github.com/timo-reymann/SignalWeb/issues/89)) ([19fccee](https://github.com/timo-reymann/SignalWeb/commit/19fccee5c8e9125c2f562deaf12e67d88e2d344d))
+
 ## [2.36.0](https://github.com/timo-reymann/SignalWeb/compare/2.35.0...2.36.0) (2026-08-15)
 
 ### Features
