@@ -2,7 +2,7 @@ FROM scratch AS licenses
 COPY LICENSE LICENSE
 COPY NOTICE NOTICE
 
-FROM jlesage/baseimage-gui:ubuntu-22.04-v4.10
+FROM jlesage/baseimage-gui:ubuntu-22.04-v4.13
 
 LABEL org.opencontainers.image.title="SignalWeb" \
       org.opencontainers.image.description="Provides a Web UI for Signal" \
