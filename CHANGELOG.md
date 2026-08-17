@@ -1,3 +1,9 @@
+## [2.38.0](https://github.com/timo-reymann/SignalWeb/compare/2.37.0...2.38.0) (2026-08-17)
+
+### Features
+
+* Update base ([0de43a5](https://github.com/timo-reymann/SignalWeb/commit/0de43a5c0428b2881445f8acfcff928ba98b4fdd))
+
 ## [2.37.0](https://github.com/timo-reymann/SignalWeb/compare/2.36.0...2.37.0) (2026-08-17)
 
 ### Features
