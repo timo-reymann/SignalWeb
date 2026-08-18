@@ -26,8 +26,7 @@ RUN add-pkg gnupg2 wget ca-certificates libglib2.0-0  \
     && del-pkg gnupg2 wget \
     && apt-get clean autoclean \
     && apt-get autoremove --yes \
-    && (getent group messagebus || groupadd -r messagebus) \
-    && rm -rf /var/lib/{apt,dpkg,cache,log}/
+    && (getent group messagebus || groupadd -r messagebus)
 
 RUN <<EOT
 set -e
