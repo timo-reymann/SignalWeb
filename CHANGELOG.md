@@ -1,3 +1,9 @@
+## [2.38.5](https://github.com/timo-reymann/SignalWeb/compare/2.38.4...2.38.5) (2026-08-18)
+
+### Bug Fixes
+
+* Drop apt clean for signal install ([ac4929b](https://github.com/timo-reymann/SignalWeb/commit/ac4929bfb7dacad595f41482fcd12abb1696fd26))
+
 ## [2.38.4](https://github.com/timo-reymann/SignalWeb/compare/2.38.3...2.38.4) (2026-08-18)
 
 ### Bug Fixes
