@@ -16,6 +16,18 @@ LABEL org.opencontainers.image.title="SignalWeb" \
 
 COPY --from=licenses / /
 
+RUN <<EOT
+set -e
+cat <<EOF > /startapp.sh
+#!/bin/sh
+exec /usr/bin/signal-desktop --no-sandbox
+EOF
+
+set-cont-env APP_NAME "Signal Messenger"
+install_app_icon.sh "https://cdn.timo-reymann.de/public/signal-web/icon.png"
+chmod +x /startapp.sh
+EOT
+
 # renovate: datasource=github-releases depName=signalapp/Signal-Desktop
 ARG signal_version="v8.21.0"
 RUN add-pkg gnupg2 wget ca-certificates libglib2.0-0  \
@@ -29,18 +41,7 @@ RUN add-pkg gnupg2 wget ca-certificates libglib2.0-0  \
     && apt-get autoremove --yes \
     && (getent group messagebus || groupadd -r messagebus)
 
-RUN <<EOT
-set -e
-cat <<EOF > /startapp.sh
-#!/bin/sh
-exec /usr/bin/signal-desktop --no-sandbox
-EOF
 
-set-cont-env APP_NAME "Signal Messenger"
-install_app_icon.sh "https://cdn.timo-reymann.de/public/signal-web/icon.png"
-chmod +x /startapp.sh
-rm -rf /var/lib/{apt,dpkg,cache,log}/
-EOT
 
 COPY --chown=1000:1000 /rootfs-override /
 RUN mkdir -p /run/dbus \
