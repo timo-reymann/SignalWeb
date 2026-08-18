@@ -1,3 +1,9 @@
+## [2.39.0](https://github.com/timo-reymann/SignalWeb/compare/2.38.6...2.39.0) (2026-08-18)
+
+### Features
+
+* Move meta layer before signal install ([ffb13fb](https://github.com/timo-reymann/SignalWeb/commit/ffb13fb8f6719e602e8d30e703242b3b8c03ce87))
+
 ## [2.38.6](https://github.com/timo-reymann/SignalWeb/compare/2.38.5...2.38.6) (2026-08-18)
 
 ### Bug Fixes
