@@ -1,3 +1,9 @@
+## [2.38.6](https://github.com/timo-reymann/SignalWeb/compare/2.38.5...2.38.6) (2026-08-18)
+
+### Bug Fixes
+
+* Mark dbus packages as manually needed ([91856bd](https://github.com/timo-reymann/SignalWeb/commit/91856bdaae1768e5e870d5ca5a2169d076ce1d44))
+
 ## [2.38.5](https://github.com/timo-reymann/SignalWeb/compare/2.38.4...2.38.5) (2026-08-18)
 
 ### Bug Fixes
