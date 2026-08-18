@@ -28,7 +28,7 @@ RUN add-pkg gnupg2 wget ca-certificates libglib2.0-0  \
     && apt-get autoremove --yes \
     && rm -rf /var/lib/{apt,dpkg,cache,log}/
 
-COPY assets/icon.png /tmp/app-icon.png
+COPY assets/icon.png /app-icon.png
 
 RUN <<EOT
 cat <<EOF > /startapp.sh
@@ -37,7 +37,7 @@ exec /usr/bin/signal-desktop --no-sandbox
 EOF
 
 set-cont-env APP_NAME "Signal Messenger"
-install_app_icon.sh "/tmp/app-icon.png"
+install_app_icon.sh "/app-icon.png"
 chmod +x /startapp.sh
 rm -rf /var/lib/{apt,dpkg,cache,log}/
 EOT
