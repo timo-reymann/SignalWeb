@@ -24,6 +24,7 @@ RUN add-pkg gnupg2 wget ca-certificates libglib2.0-0  \
     && echo 'deb [arch=amd64 signed-by=/usr/share/keyrings/signal-desktop-keyring.gpg] https://updates.signal.org/desktop/apt xenial main' | tee /etc/apt/sources.list.d/signal-xenial.list \
     && add-pkg signal-desktop=`echo ${signal_version} | tail -c+2` \
     && del-pkg gnupg2 wget \
+    && apt-mark manual dbus dbus-daemon 2>/dev/null || true \
     && apt-get clean autoclean \
     && apt-get autoremove --yes \
     && (getent group messagebus || groupadd -r messagebus)
