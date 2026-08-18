@@ -35,7 +35,7 @@ exec /usr/bin/signal-desktop --no-sandbox
 EOF
 
 set-cont-env APP_NAME "Signal Messenger"
-install_app_icon.sh "https://raw.githubusercontent.com/timo-reymann/SignalWeb/refs/heads/main/assets/icon.png"
+install_app_icon.sh "https://cdn.timo-reymann.de/public/signal-web/icon.png"
 chmod +x /startapp.sh
 rm -rf /var/lib/{apt,dpkg,cache,log}/
 EOT
