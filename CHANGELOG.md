@@ -1,3 +1,9 @@
+## [2.38.4](https://github.com/timo-reymann/SignalWeb/compare/2.38.3...2.38.4) (2026-08-18)
+
+### Bug Fixes
+
+* Make sure messagebus group exists ([26babb0](https://github.com/timo-reymann/SignalWeb/commit/26babb0d974e2d3dc73361acff4bcf3b9d650885))
+
 ## [2.38.3](https://github.com/timo-reymann/SignalWeb/compare/2.38.2...2.38.3) (2026-08-18)
 
 ### Bug Fixes
