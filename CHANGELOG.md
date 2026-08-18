@@ -1,3 +1,9 @@
+## [2.38.1](https://github.com/timo-reymann/SignalWeb/compare/2.38.0...2.38.1) (2026-08-18)
+
+### Bug Fixes
+
+* Add proper remote icon ([40df387](https://github.com/timo-reymann/SignalWeb/commit/40df3877a99122b275b0d2d2d4d7a1ba418ee00b))
+
 ## [2.38.0](https://github.com/timo-reymann/SignalWeb/compare/2.37.0...2.38.0) (2026-08-17)
 
 ### Features
