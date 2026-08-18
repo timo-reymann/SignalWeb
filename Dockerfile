@@ -29,6 +29,7 @@ RUN add-pkg gnupg2 wget ca-certificates libglib2.0-0  \
     && rm -rf /var/lib/{apt,dpkg,cache,log}/
 
 RUN <<EOT
+set -e
 cat <<EOF > /startapp.sh
 #!/bin/sh
 exec /usr/bin/signal-desktop --no-sandbox
