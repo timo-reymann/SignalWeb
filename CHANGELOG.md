@@ -1,3 +1,9 @@
+## [2.38.3](https://github.com/timo-reymann/SignalWeb/compare/2.38.2...2.38.3) (2026-08-18)
+
+### Bug Fixes
+
+* Dont clean after signal install ([0b98277](https://github.com/timo-reymann/SignalWeb/commit/0b982773afb308291d96387c3e9b350d28472b81))
+
 ## [2.38.2](https://github.com/timo-reymann/SignalWeb/compare/2.38.1...2.38.2) (2026-08-18)
 
 ### Bug Fixes
