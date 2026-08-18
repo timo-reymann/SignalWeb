@@ -1,3 +1,9 @@
+## [2.38.2](https://github.com/timo-reymann/SignalWeb/compare/2.38.1...2.38.2) (2026-08-18)
+
+### Bug Fixes
+
+* Use cdn logo ([6f3abcd](https://github.com/timo-reymann/SignalWeb/commit/6f3abcd05bf73dd269efeb90c24be8c128b4daf2))
+
 ## [2.38.1](https://github.com/timo-reymann/SignalWeb/compare/2.38.0...2.38.1) (2026-08-18)
 
 ### Bug Fixes
