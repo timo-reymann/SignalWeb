@@ -29,7 +29,7 @@ chmod +x /startapp.sh
 EOT
 
 # renovate: datasource=github-releases depName=signalapp/Signal-Desktop
-ARG signal_version="v8.21.0"
+ARG signal_version="v8.22.0"
 RUN add-pkg gnupg2 wget ca-certificates libglib2.0-0  \
     && wget -O- https://updates.signal.org/desktop/apt/keys.asc | gpg --dearmor > signal-desktop-keyring.gpg \
     && cat signal-desktop-keyring.gpg | tee /usr/share/keyrings/signal-desktop-keyring.gpg > /dev/null \
