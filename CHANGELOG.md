@@ -1,3 +1,9 @@
+## [2.47.2](https://github.com/timo-reymann/SignalWeb/compare/2.47.1...2.47.2) (2026-10-18)
+
+### Bug Fixes
+
+* disable GPU to avoid libGL errors in headless container ([bf02922](https://github.com/timo-reymann/SignalWeb/commit/bf029220dec774600ff3d7e4e32ac881d3c306c6))
+
 ## [2.47.1](https://github.com/timo-reymann/SignalWeb/compare/2.47.0...2.47.1) (2026-10-18)
 
 ### Bug Fixes
