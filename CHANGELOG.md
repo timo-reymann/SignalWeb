@@ -1,3 +1,9 @@
+## [2.47.1](https://github.com/timo-reymann/SignalWeb/compare/2.47.0...2.47.1) (2026-10-18)
+
+### Bug Fixes
+
+* recreate /run/dbus on container start ([ecfbcee](https://github.com/timo-reymann/SignalWeb/commit/ecfbcee166073f0148000a97016a5accb4a56ac2))
+
 ## [2.47.0](https://github.com/timo-reymann/SignalWeb/compare/2.46.0...2.47.0) (2026-10-16)
 
 ### Features
