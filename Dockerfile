@@ -44,8 +44,6 @@ RUN add-pkg gnupg2 wget ca-certificates libglib2.0-0  \
 
 
 COPY --chown=1000:1000 /rootfs-override /
-RUN mkdir -p /run/dbus \
-    && chown 1000:1000 /run/dbus
 
 ENV DARK_MODE=1 \
     KEEP_APP_RUNNING=1 \
