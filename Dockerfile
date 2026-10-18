@@ -20,7 +20,7 @@ RUN <<EOT
 set -e
 cat <<EOF > /startapp.sh
 #!/bin/sh
-exec /usr/bin/signal-desktop --no-sandbox
+exec /usr/bin/signal-desktop --no-sandbox --disable-gpu
 EOF
 
 set-cont-env APP_NAME "Signal Messenger"
