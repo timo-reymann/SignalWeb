@@ -1,3 +1,9 @@
+## [2.49.0](https://github.com/timo-reymann/SignalWeb/compare/2.48.0...2.49.0) (2026-10-25)
+
+### Features
+
+* Publish tag ranges ([2767819](https://github.com/timo-reymann/SignalWeb/commit/2767819a09ecffb279db880a570a3c838530c6a4))
+
 ## [2.48.0](https://github.com/timo-reymann/SignalWeb/compare/2.47.2...2.48.0) (2026-10-23)
 
 ### Features
