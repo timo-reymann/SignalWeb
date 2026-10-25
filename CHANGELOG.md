@@ -1,3 +1,9 @@
+## [2.50.0](https://github.com/timo-reymann/SignalWeb/compare/2.49.0...2.50.0) (2026-10-25)
+
+### Features
+
+* Upgrade to ubuntu 26 ([#99](https://github.com/timo-reymann/SignalWeb/issues/99)) ([4dce103](https://github.com/timo-reymann/SignalWeb/commit/4dce10374b4edbc5d94ab7ff275218a84208934d))
+
 ## [2.49.0](https://github.com/timo-reymann/SignalWeb/compare/2.48.0...2.49.0) (2026-10-25)
 
 ### Features
